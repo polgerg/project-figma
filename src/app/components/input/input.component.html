@@ -1,0 +1,11 @@
+<div class="input-div">
+    <label for="{{id}}" [class.is-focus]="control.touched" [class.is-valid]="control.valid">{{label}}</label>
+    <img [src]="imgUrl" alt="username-icon">
+    <input
+        [class.input-focus]="control.value.length > 0 && control.touched" 
+        type="{{type}}" 
+        id="{{id}}"
+        [formControl]="control"
+        name="{{name}}"
+        >
+</div>
