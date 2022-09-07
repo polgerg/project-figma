@@ -1,28 +1,32 @@
-<h1>Login</h1>
-<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-    <!-- <div class="input-div">
-        <label for="username" [class.is-focus]="username.touched" [class.is-valid]="username.valid">Username</label>
-        <img src="../../../assets/Property 1=user.svg" alt="username-icon">
-        <input
-            [class.input-focus]="username.value.length > 0 && username.touched" 
-            type="text" 
-            id="username"
-            formControlName="username"
-            name="username"
-            >
+<div class="login-main">
+    <div class="login-panel">
+        <h1>Login</h1>
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+            <!-- <div class="input-div">
+                <label for="username" [class.is-focus]="username.touched" [class.is-valid]="username.valid">Username</label>
+                <img src="../../../assets/Property 1=user.svg" alt="username-icon">
+                <input
+                    [class.input-focus]="username.value.length > 0 && username.touched" 
+                    type="text" 
+                    id="username"
+                    formControlName="username"
+                    name="username"
+                    >
+                
+            </div> -->
+            <app-input [control]="username" [type]="'text'" [id]="'username'" [controlName]="'username'" [name]="'username'" [imgUrl]="'../../../assets/Property 1=user.svg'" [label]="'Username'"></app-input>
+            <app-input [control]="password" [type]="'password'" [id]="'password'" [controlName]="'password'" [name]="'password'" [imgUrl]="'../../../assets/Property 1=Eye.svg'" [label]="'Password'"></app-input>
+            <!-- <div class="input-div">
+                <input 
+                    type="password" 
+                    id="password"
+                    formControlName="password"
+                    name="password"
+                    >   
+            </div> -->
+            <button type="submit">LOGIN</button>
+            <p>Not account yet? <a href="#">Register</a></p>
         
-    </div> -->
-    <app-input [control]="username" [type]="'text'" [id]="'username'" [controlName]="'username'" [name]="'username'" [imgUrl]="'../../../assets/Property 1=user.svg'" [label]="'Username'"></app-input>
-    <app-input [control]="password" [type]="'password'" [id]="'password'" [controlName]="'password'" [name]="'password'" [imgUrl]="'../../../assets/Property 1=Eye.svg'" [label]="'Password'"></app-input>
-    <!-- <div class="input-div">
-        <input 
-            type="password" 
-            id="password"
-            formControlName="password"
-            name="password"
-            >   
-    </div> -->
-    <button type="submit">LOGIN</button>
-    <p>Not account yet? <a href="#">Register</a></p>
-
-</form>
+        </form>
+    </div>
+</div>

@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { GalleryItemComponent } from './components/gallery-item/gallery-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    InputComponent
+    InputComponent,
+    GalleryComponent,
+    GalleryItemComponent,
   ],
   imports: [
     BrowserModule,

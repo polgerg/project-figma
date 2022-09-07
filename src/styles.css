@@ -10,9 +10,3 @@
     margin: 0;
     padding: 0;
 }
-
-body {
-    width: 100%;
-    background-image: url('https://images.pexels.com/photos/1123982/pexels-photo-1123982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-position: cover;
-}

@@ -18,10 +18,23 @@ export class InputComponent implements OnInit {
 
   @Input() control!: FormControl;
 
+  isFocused: boolean = false;
+  isSuccess: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  onClick(){
+    this.isFocused = true;
+  }
+
+  onLeave(){
+    this.isFocused = false;
+  }
+
+
 
 
 

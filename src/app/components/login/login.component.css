@@ -1,3 +1,23 @@
+.login-main {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.pexels.com/photos/1123982/pexels-photo-1123982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* background-position: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-panel {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 167px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+
 h1 {
     /* position: absolute;
     width: 61px;
