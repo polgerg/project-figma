@@ -26,7 +26,7 @@
     </div>
 
     <div class="grid-container" >
-        <app-gallery-item *ngFor="let item of galleryItems" [galleryItem]="item"></app-gallery-item>
+        <app-gallery-item *ngFor="let item of galleryItems" [galleryItem]="item" (click)="selectItem(item)"></app-gallery-item>
     </div>
     <div class="gallery-footer">
         <img src="../../../assets/recent.svg" alt="recent-icon">

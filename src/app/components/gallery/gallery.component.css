@@ -46,20 +46,21 @@ h1 {
 .carausel {
     display: flex;
     flex-direction: column;
-    gap: 0
+    gap: 0;
+    
 }
 
 .img-div {
     margin-top: 24px;
-    width: 100%;
     padding: 0;
     margin-bottom: 0;
+    display: flex;
+    object-fit: cover;
 
 }
 
 .carausel-img {
     width: 100%;
-    height: 100%;
 }
 
 .dots-div {
