@@ -10,6 +10,7 @@ import { GalleryService } from 'src/app/services/gallery.service';
 export class GalleryItemComponent implements OnInit {
 
   @Input() galleryItem?: GalleryItem
+ 
 
   constructor(private galleryService: GalleryService) { }
 
@@ -21,7 +22,7 @@ export class GalleryItemComponent implements OnInit {
   }
 
   onBook() {
-    //.. Modal comes here
+    this.galleryService.setSuccessfulBooking()
   }
 
 }

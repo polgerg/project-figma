@@ -12,6 +12,8 @@ export class GalleryComponent implements OnInit {
   carausalImgUrl?: string
   selectedItem: GalleryItem
 
+  successfulBooking: boolean = false;
+
   selectedImg?: string;
   index: number = 0
   
@@ -26,10 +28,11 @@ export class GalleryComponent implements OnInit {
     ]
     this.selectedImg = this.galleryItems[0].imgUrl,
     this.selectedItem = this.galleryItems[0]
-
    }
 
   ngOnInit(): void {
+    this.galleryService.getIndex().subscribe((index) => this.index = index)
+    this.galleryService.getSuccessfulBooking().subscribe((value) => this.successfulBooking = value)
   }
 
   selectImg(index: number): void{

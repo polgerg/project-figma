@@ -1,4 +1,6 @@
 <div class="gallery-container">
+
+    
     <div class="header">
         <h1>Let's start a new trip!</h1>
         <img src="../../../assets/mat-avatar.svg" alt="">
@@ -24,7 +26,7 @@
             </div>
         </div>
     </div>
-
+    
     <div class="grid-container" >
         <app-gallery-item *ngFor="let item of galleryItems" [galleryItem]="item" (click)="selectItem(item)"></app-gallery-item>
     </div>
@@ -33,4 +35,5 @@
         <img src="../../../assets/favourites.svg" alt="favourites-icon">
         <img src="../../../assets/nearby.svg" alt="nearby-icon">
     </div>
+    <app-success-alert *ngIf="successfulBooking"></app-success-alert>
 </div>

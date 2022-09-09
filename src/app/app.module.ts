@@ -8,6 +8,7 @@ import { InputComponent } from './components/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { GalleryItemComponent } from './components/gallery-item/gallery-item.component';
+import { SuccessAlertComponent } from './shared/success-alert/success-alert.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { GalleryItemComponent } from './components/gallery-item/gallery-item.com
     InputComponent,
     GalleryComponent,
     GalleryItemComponent,
+    SuccessAlertComponent,
   ],
   imports: [
     BrowserModule,
