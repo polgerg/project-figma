@@ -30,25 +30,48 @@ label {
     position: absolute;
     left: 16px;
     bottom: 16px;
-
+    
     width: auto;
     height: 24px;
-
+    
     /* v-text/body-1 */
-
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     /* identical to box height, or 150% */
-
+    
     letter-spacing: 0.5px;
-
+    
     /* grey/darken-3 */
-
+    
     color: #424242;
     
+}
+
+.error {
+    color: red;
+}
+
+.is-success{
+    position: absolute;
+    z-index: 100;
+    left: 10px;
+    bottom: 48px;
+    height: 16px;
+    background-color: white;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: auto;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #424242;
 }
 
 .is-focused{
@@ -72,27 +95,13 @@ label {
 
 }
 
-.is-success{
-    position: absolute;
-    z-index: 100;
-    left: 10px;
-    bottom: 48px;
-    height: 16px;
-    background-color: white;
-    padding-left: 6px;
-    padding-right: 6px;
-    width: auto;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #424242;
-}
-
 img {
     position: absolute;
     bottom: 16px;
     right: 16px;
+}
+
+
+p {
+    padding: 4px;
 }

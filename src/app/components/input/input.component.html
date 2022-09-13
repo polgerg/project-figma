@@ -1,5 +1,5 @@
 <div class="input-div">
-    <label for="{{id}}" [class.is-focused]="isFocused" [class.is-success]="control.value.length > 0 && control.touched">{{label}}</label>
+    <label for="{{id}}" [class.is-focused]="isFocused" [class.is-success]="control.value.length > 0 && control.touched" [class.error]="control.errors && control.touched">{{label}}</label>
     <img [src]="imgUrl" alt="username-icon">
     <input
         [class.input-focus]="control.value.length > 0 && isFocused" 
@@ -11,3 +11,6 @@
         (focusout)="onLeave()"
         >
 </div>
+<p *ngIf="control.hasError('required') && control.touched" style="color: red">Required field!</p>
+<p *ngIf="control.hasError('pattern')" style="color: red">Not valid characters!</p>
+<p *ngIf="control.hasError('minlength') && control.touched" style="color: red">You must enter atleast 6 characters!</p>
